@@ -1,4 +1,9 @@
 /* Base */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 130px;
+}
 html {
   overflow-x: hidden; }
 
