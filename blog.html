@@ -10,8 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Mansalva|Roboto&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="fonts/icomoon/style.css">
-  <link rel = "icon" href = "images/logo1.jpg" 
-        type = "image/x-icon">
+  <link rel="icon" href="images/logo1.jpg" type="image/x-icon">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/jquery.fancybox.min.css">
@@ -23,13 +22,19 @@
   <!-- MAIN CSS -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style>
-.mySlides {display:none;}
-</style>
+  <style>
+    .mySlides {
+      display: none;
+    }
+
+    .mySlides1 {
+      display: none;
+    }
+  </style>
 
 </head>
 
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" onload="readlessflood()">
 
 
   <div class="site-wrap" id="home-section">
@@ -125,26 +130,30 @@
           <div class="col-md-6" id="first-step">
             <div class="event-29191 mb-5">
               <div class="w3-content w3-display-container">
-              <a class="d-block mb-3">
-                
-                <img src="images/dabbay1.jpg" alt="Image" class="img-fluid rounded mySlides">
-                <img src="images/rationdabba1.jpg" alt="Image" class="mySlides img-fluid rounded">
-                <img src="images/poster3.jpg" alt="Image" class="mySlides img-fluid rounded">
-                <img src="images/poster2.jpg" alt="Image" class="mySlides img-fluid rounded">
-                <video src="images/video1.mp4" autoplay muted class="mySlides "></video>
+                <a class="d-block mb-3">
 
-                <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-                <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
-              </a>
+                  <img src="images/dabbay1.jpg" alt="Image" style="width: 1000px;height: 405px ;"
+                    class="img-fluid rounded mySlides">
+                  <img src="images/rationdabba1.jpg" alt="Image" style="width: 1000px;height: 405px ;"
+                    class="mySlides img-fluid rounded">
+                  <img src="images/poster3.jpg" alt="Image" style="width: 1000px;height: 405px ;"
+                    class="mySlides img-fluid rounded">
+                  <img src="images/poster2.jpg" alt="Image" style="width: 1000px;height: 405px ;"
+                    class="mySlides img-fluid rounded">
+                  <video src="images/video1.mp4" autoplay muted class="mySlides "></video>
+
+                  <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                  <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+                </a>
               </div>
-              
-              
+
+
 
               <div class="px-3 d-flex">
 
                 <div class="bg-primary p-3 d-inline-block text-center rounded mr-4 date">
-                  <span class="text-white h3 m-0 d-block">22</span>
-                  <span class="text-white small">Oct 2019</span>
+                  <span class="text-white h3 m-0 d-block">30</span>
+                  <span class="text-white small">June 2022</span>
                 </div>
 
                 <div>
@@ -154,16 +163,17 @@
                     <span> <span class="icon-person mr-2 text-muted"></span> </span>
                   </div>
                   <h3><b>
-                    Our First Step
-                  </b>
-                  <br>
+                      Our First Step
+                    </b>
+                    <br>
                     <a>So today was the first day we step out for the HOPEWITHDUK. We had mixed emotions. We
                       were happy , worried and tensed at the same time. We had money but we didn't know where to spend
                       it. Alhumdulillah we collected almost Rs.20,000/- within three weeks and its a victory for all of
                       the people
                       who are a part of it.
                       <span id="text">
-                        We were sitting and thinking where should the money be spent.<br><br> Then we hit upon this idea. It
+                        We were sitting and thinking where should the money be spent.<br><br> Then we hit upon this
+                        idea. It
                         was
                         41'C and we just went on executing this idea without any single second thought. May Allah
                         accept this from us.
@@ -182,7 +192,8 @@
                         this. What difference will you make?)
                         and when you say to yourself “WHY NOT ME?! I HAVE TO PLAY A PART”
                         this is your victory.
-                        Regards❤️</a></h3>
+                        Regards❤️</a>
+                  </h3>
                   </span>
                   <div>
                     <button id="toggle" class="btn btn-success">Read More</button>
@@ -193,113 +204,103 @@
               </div>
             </div>
           </div>
-          <!-- <div class="col-md-6">
+
+
+
+
+
+          <div class="col-md-6" id="flood-relief">
             <div class="event-29191 mb-5">
-              <a href="#" class="d-block mb-3"><img src="images/img_2.jpg" alt="Image" class="img-fluid rounded"></a>
+              <div class="w3-content w3-display-container">
+                <a class="d-block mb-3">
+
+                  <img src="images/flood1.webp" alt="Image" style="width: 1000px;height: 405px ;"
+                    class="img-fluid rounded  mySlides1">
+                  <img src="images/flood2.jpg" alt="Image" style="width: 1000px;height: 405px ;"
+                    class="mySlides1  img-fluid rounded">
+                  <img src="images/flood3.jpg" alt="Image" style="width: 1000px;height: 405px ;"
+                    class="mySlides1 img-fluid rounded">
+
+
+                  <button class="w3-button w3-display-left" onclick="plusDivs1(-1)">&#10094;</button>
+                  <button class="w3-button w3-display-right" onclick="plusDivs1(+1)">&#10095;</button>
+                </a>
+              </div>
+
+
+
               <div class="px-3 d-flex">
 
                 <div class="bg-primary p-3 d-inline-block text-center rounded mr-4 date">
-                  <span class="text-white h3 m-0 d-block">22</span>
-                  <span class="text-white small">Oct 2019</span>
+                  <span class="text-white h3 m-0 d-block">27</span>
+                  <span class="text-white small">Aug 2022</span>
                 </div>
 
                 <div>
                   <div class="mb-3">
-                    <span class="mr-3"> <span class="icon-bookmark mr-2 text-muted"></span><a href="#">Cause</a>, <a href="#">Event</a></span>
-                    <span> <span class="icon-person mr-2 text-muted"></span>James Smith</span>
+                    <span class="mr-3"> <span class="icon-bookmark mr-2 text-muted"></span><a>Cause</a>,
+                      <a>Event</a></span>
+                    <span> <span class="icon-person mr-2 text-muted"></span> </span>
                   </div>
-                  <h3><a href="#">Ratione Delectus Assumenda Rem Modi Quaerat Laborum</a></h3>
+                  <h3><b>
+                      Flood Relief campaign
+                    </b>
+                    <br>
+                    <a>In August 2022, Pakistan faced its worst flood situation ever with 1/3 of the country under water. Over 1200
+                      died and millions of people were displaced. In these crisis,
+                      HopewithDUK-a student based charity organization, started working with the idea of helping people                       without the discrimination of colour, caste and religion. We work for welfare of humanity because it's
+                      the beauty of our religion.
+                      <span id="text1">
+                        <p>
+                        During this event, we contacted a family of Nawab shah. We came to know 
+                        about them by our friend. We contacted them and came to know that
+                        conditions there are just horrible. "I was talking to one of the families belonging to Nawab shah . Wedera(chief)
+                        of those areas are not providing the people with the things they have
+                        promised. They also stopped people to ask for help from any other sources. People are injured and
+                        terrified. The people are just lying and requesting people to take their families to Nothern
+                        Punjab", our co-founder told the team. 
+                        <!-- Half an hour ago my aunt went to a jaz cash office so she could withdraw money and there
+                        was a man whom we talked a week before when they were talking about there areas that man started
+                        crying and said k mein 36 ghanto k drive kar k aya hun or mere pass 18 bache hen is wakay waha
+                        ke
+                        he said that wahan ek admi tha or us ne apni bivi or 2 bacho ko ek anjan shaks k sath yaha
+                        bejhwa
+                        dya k agar mein bach gya to mein ajaun ga or akat apni family ko le jaun ga or agar na aa saka
+                        to
+                        yeh khud he wapis ajaen ge or yeh abhi siraf sindh k chand ilaqo k bat hy our Balochistan is
+                        completely destroyed 
+                        Our enemies are releasing water our dams are destroying so now what we have 
+                        to do kia hath par hath rakh kar bthe rahen nahi bulke apne hise ka kam karen uthe uth kar madad
+                        karen kia cheez hy jo apko Allah k raah mein in gareeb bacho bivaon k madad karne say rook raha
+                        hy? --><br>
+                        Instead of remaining idle, we had to step up and provide all the help we could.
+                        
+                        It is our moral obligation to sacrifice all we have in the name of Allah.
+                        Our team members are contributing as much as they can. One of our family friends are taking 3 trucks 
+                        of ration to Tonsa and Rajanpur with the help of <b>Jazba e Noo</b>
+                          <br>
+                        We urge you to verify the sources you are contributing to. It is the test of our faith. Even your little contribution
+                        will have an effect. So don't wait and help Pakistani brothers and sisters in this hour of need.
+                      </p>
+                      </span>
+                    </a>
+                  </h3>
+
+                  <div>
+                    <button id="toggle1" class="btn btn-success">Read More</button>
+                  </div>
                 </div>
+
 
               </div>
             </div>
-          </div> -->
+          </div>
 
-          <!-- <div class="col-md-6">
-            <div class="event-29191 mb-5">
-              <a href="#" class="d-block mb-3"><img src="images/img_1.jpg" alt="Image" class="img-fluid rounded"></a>
-              <div class="px-3 d-flex">
 
-                <div class="bg-primary p-3 d-inline-block text-center rounded mr-4 date">
-                  <span class="text-white h3 m-0 d-block">22</span>
-                  <span class="text-white small">Oct 2019</span>
-                </div>
 
-                <div>
-                  <div class="mb-3">
-                    <span class="mr-3"> <span class="icon-bookmark mr-2 text-muted"></span><a href="#">Cause</a>, <a href="#">Event</a></span>
-                    <span> <span class="icon-person mr-2 text-muted"></span>James Smith</span>
-                  </div>
-                  <h3><a href="#">Ratione Delectus Assumenda Rem Modi Quaerat Laborum</a></h3>
-                </div>
 
-              </div>
-            </div>
-          </div> -->
-          <!-- <div class="col-md-6">
-            <div class="event-29191 mb-5">
-              <a href="#" class="d-block mb-3"><img src="images/img_2.jpg" alt="Image" class="img-fluid rounded"></a>
-              <div class="px-3 d-flex">
 
-                <div class="bg-primary p-3 d-inline-block text-center rounded mr-4 date">
-                  <span class="text-white h3 m-0 d-block">22</span>
-                  <span class="text-white small">Oct 2019</span>
-                </div>
 
-                <div>
-                  <div class="mb-3">
-                    <span class="mr-3"> <span class="icon-bookmark mr-2 text-muted"></span><a href="#">Cause</a>, <a href="#">Event</a></span>
-                    <span> <span class="icon-person mr-2 text-muted"></span>James Smith</span>
-                  </div>
-                  <h3><a href="#">Ratione Delectus Assumenda Rem Modi Quaerat Laborum</a></h3>
-                </div>
-
-              </div>
-            </div>
-          </div> -->
-
-          <!-- <div class="col-md-6">
-            <div class="event-29191 mb-5">
-              <a href="#" class="d-block mb-3"><img src="images/img_1.jpg" alt="Image" class="img-fluid rounded"></a>
-              <div class="px-3 d-flex">
-
-                <div class="bg-primary p-3 d-inline-block text-center rounded mr-4 date">
-                  <span class="text-white h3 m-0 d-block">22</span>
-                  <span class="text-white small">Oct 2019</span>
-                </div>
-
-                <div>
-                  <div class="mb-3">
-                    <span class="mr-3"> <span class="icon-bookmark mr-2 text-muted"></span><a href="#">Cause</a>, <a href="#">Event</a></span>
-                    <span> <span class="icon-person mr-2 text-muted"></span>James Smith</span>
-                  </div>
-                  <h3><a href="#">Ratione Delectus Assumenda Rem Modi Quaerat Laborum</a></h3>
-                </div>
-
-              </div>
-            </div>
-          </div> -->
-          <!-- <div class="col-md-6">
-            <div class="event-29191 mb-5">
-              <a href="#" class="d-block mb-3"><img src="images/img_2.jpg" alt="Image" class="img-fluid rounded"></a>
-              <div class="px-3 d-flex">
-
-                <div class="bg-primary p-3 d-inline-block text-center rounded mr-4 date">
-                  <span class="text-white h3 m-0 d-block">22</span>
-                  <span class="text-white small">Oct 2019</span>
-                </div>
-
-                <div>
-                  <div class="mb-3">
-                    <span class="mr-3"> <span class="icon-bookmark mr-2 text-muted"></span><a href="#">Cause</a>, <a href="#">Event</a></span>
-                    <span> <span class="icon-person mr-2 text-muted"></span>James Smith</span>
-                  </div>
-                  <h3><a href="#">Ratione Delectus Assumenda Rem Modi Quaerat Laborum</a></h3>
-                </div>
-
-              </div>
-            </div>
-          </div> -->
 
 
           <!-- <div class="col-12 text-center">
@@ -310,6 +311,9 @@
           </div> -->
 
         </div>
+
+
+
       </div>
     </div>
 
@@ -422,7 +426,9 @@
 
   <script src="js/main.js"></script>
   <script>
-    $(document).ready(function () {
+    $(document).ready(
+      function () 
+    {
       $("#toggle").click(function () {
         var elem = $("#toggle").text();
         if (elem == "Read More") {
@@ -435,14 +441,66 @@
           $("#text").slideUp();
         }
       });
-    });
+    },
+    
+    function () 
+    {
+      $("#toggle1").click(function () {
+        var elem1 = $("#toggle1").text();
+        if (elem1 == "Read More") {
+          //Stuff to do when btn is in the read more state
+          $("#toggle1").text("Read Less");
+          $("#text1").slideDown();
+        } else 
+        {
+          //Stuff to do when btn is in the read less state
+          $("#toggle1").text("Read More");
+          $("#text1").slideUp();
+        }
+      });
+    }
+    
+    
+    );
   </script>
+
+
+  <script>
+    $(document).ready(function () 
+    {
+      $("#toggle1").click(function () {
+        var elem = $("#toggle1").text();
+        if (elem == "Read More") {
+          //Stuff to do when btn is in the read more state
+          $("#toggle1").text("Read Less");
+          $("#text1").slideDown();
+        } else {
+          //Stuff to do when btn is in the read less state
+          $("#toggle1").text("Read More");
+          $("#text1").slideUp();
+        }
+      });
+    });
+
+
+    function readlessflood()
+    {
+      $("#text1").slideUp() ;
+    }
+  </script>
+
   <script>
     var slideIndex = 1;
+    var slideIndex1 = 1;
     showDivs(slideIndex);
+    showDivs1(slideIndex1);
 
     function plusDivs(n) {
       showDivs(slideIndex += n);
+    }
+
+    function plusDivs1(n) {
+      showDivs1(slideIndex1 += n);
     }
 
     function showDivs(n) {
@@ -455,6 +513,19 @@
       }
       x[slideIndex - 1].style.display = "block";
     }
+
+
+    function showDivs1(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides1");
+      if (n > x.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = x.length };
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex - 1].style.display = "block";
+    }
+
   </script>
 </body>
 
